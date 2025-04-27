@@ -1,0 +1,2 @@
+- Natural Language Processing with transformers(p.155)
+    -> Make a script about how to inference a dataset without using map and do further things like evaluation.

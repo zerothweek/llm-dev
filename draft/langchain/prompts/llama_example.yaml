@@ -1,0 +1,15 @@
+_type: "prompt"
+template: |
+  <|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+  Cutting Knowledge Date: December 2023
+  Today Date: {today_date}
+
+  {system_prompt}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+  {user_text}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+input_variables:
+  -"user_text"
+partial_variables:
+  today_date: get_today # This is function that needs to be imported or made
+  system_prompt: "You are a pirate chatbot who always responds in pirate speak!"

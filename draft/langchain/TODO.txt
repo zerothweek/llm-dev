@@ -1,0 +1,5 @@
+right now focus only considering there is only a single input no batch
+
+
+
+pip install langchain, langchain-community, langchain-huggingface 등을 통해 github와 library version installation 에대해 이해하기

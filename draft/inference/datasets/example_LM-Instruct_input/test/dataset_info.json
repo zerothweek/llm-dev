@@ -1,0 +1,42 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "awesome-chatgpt-prompts",
+  "dataset_size": 104260,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/fka/awesome-chatgpt-prompts@68ba7694e23014788dcc8ab5afe613824f45a05c/prompts.csv": {
+      "num_bytes": 104186,
+      "checksum": null
+    }
+  },
+  "download_size": 104186,
+  "features": {
+    "act": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 208446,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 104260,
+      "num_examples": 203,
+      "dataset_name": "awesome-chatgpt-prompts"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
