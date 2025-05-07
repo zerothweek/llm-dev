@@ -1,0 +1,21 @@
+FROM llm-dev:v0.1
+
+# requirements.txt installation
+RUN pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+COPY requirements.txt /workspace/
+RUN pip install --no-cache-dir -r /workspace/requirements.txt
+
+# Install Jupyter Notebook
+RUN pip install notebook
+
+# Create a default Jupyter configuration (no password, no token)
+RUN jupyter notebook --generate-config && \
+    echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.port = 8080" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.token = ''" >> ~/.jupyter/jupyter_notebook_config.py && \
+    echo "c.NotebookApp.password = ''" >> ~/.jupyter/jupyter_notebook_config.py
+
+# Start Jupyter Notebook as default
+CMD ["/bin/bash"]
+

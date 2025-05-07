@@ -1,0 +1,28 @@
+# Install LLM-related libraries
+transformers 
+datasets 
+accelerate 
+bitsandbytes
+
+# Install utils
+pandas
+matplotlib
+seaborn
+
+# For streamlit
+streamlit
+
+# Install Langchain-related libraries
+langchain
+langchain-community
+langchain-huggingface
+
+# agentic
+langgraph
+smolagents
+llama-index
+
+# env
+python-dotenv
+pymupdf4llm
+
